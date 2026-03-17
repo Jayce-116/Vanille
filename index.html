@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Vanille Cakes - Premium Bakery in Kyanja, Kampala</title>
+  <meta name="description"
+    content="Vanille Cakes is a premium bakery in Kyanja, Kampala, specializing in bespoke cakes, gourmet treats, and Parisian-inspired confections. Order your custom cake today!" />
+  <meta name="keywords"
+    content="Vanille Cakes, Kampala bakery, custom cakes, wedding cakes, gourmet treats, Kyanja, Uganda, Parisian bakery, order cake Kampala" />
+  <meta name="author" content="Vanille Cakes" />
+  <link rel="canonical" href="https://vanillecakes.co.ug/" />
+  <meta property="og:title" content="Vanille Cakes - Premium Bakery in Kyanja, Kampala" />
+  <meta property="og:description"
+    content="Premium bakery in Kyanja, Kampala. Bespoke cakes, gourmet treats, and more. Order your cake today!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vanillecakes.co.ug/" />
+  <meta property="og:image" content="https://vanillecakes.co.ug/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vanille Cakes - Premium Bakery in Kyanja, Kampala" />
+  <meta name="twitter:description"
+    content="Premium bakery in Kyanja, Kampala. Bespoke cakes, gourmet treats, and more. Order your cake today!" />
+  <meta name="twitter:image" content="https://vanillecakes.co.ug/og-image.jpg" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Montserrat:wght@300;400;500;600&amp;family=Pinyon+Script&amp;family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+  <script src="config.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#a1223d",
+            secondary: "#ddb049",
+            "background-light": "#fdfaf6",
+            "background-dark": "#1a1212",
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            brand: ["Pinyon Script", "cursive"],
+            serif: ["Cormorant Garamond", "serif"],
+            sans: ["Montserrat", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            'xl': '1rem',
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    .pattern-bg {
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBMjCQPxRjnie1kIpMJ8Fn4x5CqnwQRfiFq91lvGEG3fE2h5ODHvUJifwIwQfjIw0ljQW1AASmfR3GLR3sJ1U6DV9pJjyrgKhR8KSOwYj-zPoDFzhrv3XyFfFjRYK8_ApyhO_Bcpu18mk-YNSxiJ0BOOeH861lrhgKEuVAPJIkJdggNkzZdxUeO-l2elrzlPUsibLHcmTeWGU-781rYOdlz0ZJwB0UVCZ2ji9VuzV-lKpS1-rchVZkvSj5NVBO0m4CODDwNk8MAKNrO);
+    }
+    .text-gold-gradient {
+      background: linear-gradient(45deg, #ddb049, #f7e1ad, #ddb049);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .decoration-float {
+      animation: float 4s ease-in-out infinite;
+    }
+
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 font-sans transition-colors duration-300">
+  <!-- Dark mode toggle button -->
+  <button id="theme-toggle"
+    class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform"
+    aria-label="Toggle dark mode">
+    <span class="material-symbols-outlined">contrast</span>
+  </button>
+  <nav
+    class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-secondary/20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="relative">
+            <img src="assets/flower-maroon.png" alt="Vanille Flower" class="h-10 md:h-12 w-auto object-contain dark:hidden group-hover:rotate-12 transition-transform">
+            <img src="assets/flower-white.png" alt="Vanille Flower" class="h-10 md:h-12 w-auto object-contain hidden dark:block group-hover:rotate-12 transition-transform">
+          </div>
+          <span class="text-primary dark:text-secondary text-4xl md:text-5xl font-brand tracking-normal normal-case">Vanille</span>
+        </a>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-secondary text-3xl focus:outline-none" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div id="nav-links"
+        class="hidden md:flex space-x-8 font-medium uppercase text-sm tracking-widest bg-background-light dark:bg-background-dark md:bg-transparent md:dark:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto p-6 md:p-0 z-40 md:z-auto shadow-lg md:shadow-none">
+        <a class="hover:text-primary dark:hover:text-secondary transition-colors block md:inline"
+          href="blog.html">Blog</a>
+        <a class="hover:text-primary dark:hover:text-secondary transition-colors block md:inline"
+          href="gallery.html">Gallery</a>
+        <a class="hover:text-primary dark:hover:text-secondary transition-colors block md:inline"
+          href="#contact">Contact</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button
+          class="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20"
+          onclick="orderNowPrompt()">Order Now</button>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // Responsive menu toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function () {
+          navLinks.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+  <header class="relative h-[85vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img alt="Premium Red Velvet Cake" class="w-full h-full object-cover"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs8j8W010mLzYTWjkk3a3Pj35ZvdjqgNpR04J1Qa-2izf0IqQ-mMBiFkupTlQmokfXhDa6dsfW5Ln2QK2f7JsynZdYtiIT34oMuitppG7F9-CAqsbkvxn1-bzd_oI_8RfeuAYaOggD_XvTsx2dpep8Q0rAv9-qg-bU5Fp20CGYmIq55Q_pE8QEBBohDj1jjjhnFbd-rYj4rW0Eue7JbBgI-xlAeadoyTeAj9DPx7m_d0O8KVHbZjETizJ2IpoU4kqKT24GDDDeu_7_" />
+      <div class="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-background-dark/40 to-transparent">
+      </div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <span
+          class="inline-block px-4 py-1 mb-6 border border-secondary text-secondary rounded-full text-xs font-bold tracking-widest uppercase bg-secondary/10">Kyanja's
+          Finest Bakery</span>
+        <h1 class="text-5xl md:text-7xl font-brand text-white mb-6 leading-tight">Exquisite <span
+            class="text-secondary italic">Vanille Confectionaries</span></h1>
+        <p class="text-lg text-gray-200 mb-10 max-w-lg font-light leading-relaxed">Experience premium taste at Vanille.
+          From bespoke wedding cakes to daily treats, we bring the heart of Kampalan confectionery to your table.</p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+          <a class="border border-white text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-center hover:bg-white/10 transition-colors"
+            href="tel:+256772560277">Call: +256 772 560 277</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Floral Divider -->
+  <div class="flex justify-center -mb-8 relative z-20">
+    <img src="assets/flower-maroon.png" alt="Floral Decoration" class="h-16 w-auto opacity-80 decoration-float">
+  </div>
+  <section class="py-24 pattern-bg" id="treats">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <img src="assets/flower-maroon.png" alt="Flower Accent" class="h-12 w-auto mx-auto mb-4 opacity-60">
+        <h2 class="text-secondary font-display text-lg mb-2 italic">Exquisite Selection</h2>
+        <h3 class="text-4xl md:text-5xl font-serif text-primary dark:text-white mb-4">Our Signature Treats</h3>
+        <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div
+          class="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800 transition-all hover:-translate-y-2">
+          <div class="relative h-72 overflow-hidden">
+            <img alt="Premium Chocolate Cake - Dark Truffle Extravagance"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 treat-img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTyXF_qZYWsAJad2iF7XBhZlxTNQa0UuOkPYmdXHSSJCT4mTplHj9cg5R4zU_pSqV7QszqjoPCrDmJxll_fPSdkFHqmLao_N1V6fmNmLC4Z2l4ceKbB44mD0p_8wsk_bEsW6Uofy-EpxOcX19Rzj3XV0Kef9gqfocEJ2SRo1HTbMsd81pjyG8YXQGB-NbYx5PWd0j-QtPucM4sUnbyS2E3whriAVplIVxfNp7ziKEAbeh1o0sThZ68E9MJwLNvAT6tSZ4S42zeQVaI" />
+            <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded text-xs font-bold">BESTSELLER
+            </div>
+          </div>
+          <div class="p-8">
+            <h4 class="text-2xl font-display mb-2">Dark Truffle Extravagance</h4>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Rich Belgian dark chocolate layers with a smooth
+              ganache finish.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-bold text-primary dark:text-secondary"></span>
+              <button
+                class="p-2 rounded-full border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors">
+                <span class="material-symbols-outlined">shopping_bag</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800 transition-all hover:-translate-y-2">
+          <div class="relative h-72 overflow-hidden">
+            <img alt="Vanilla Bean Dream - Vanille Cakes"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 treat-img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOmYUO8zyj8XBQqcF04HXqXoPP9HhPgmy2xXCXme2nTxMyAWCDX6aqiaSBopyipin_VgUYK-feVP_6A18AR0zc0ti5WNzn4PAjcUcbad8W1UbUeMkTihFLPnCSgR2vhbWzba4Adip4EKqwe3D-tDGRA-hjBPI3JTw6fIkMnhCvnCEm8ciFLZIdgKLsxEGNssEWrUIA7U4hkEu2jvdWVoZHsdS8N6Zperqt8LRfgWx04uzTaev4i_rEo4S-dw7z1sJwrN_0twQULNnn" />
+          </div>
+          <div class="p-8">
+            <h4 class="text-2xl font-display mb-2">Vanilla Bean Dream</h4>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Light and airy sponge infused with fresh vanilla
+              pods.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-bold text-primary dark:text-secondary"></span>
+              <button
+                class="p-2 rounded-full border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors">
+                <span class="material-symbols-outlined">shopping_bag</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800 transition-all hover:-translate-y-2">
+          <div class="relative h-72 overflow-hidden">
+            <img alt="Red Velvet Passion - Vanille Cakes"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 treat-img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfA1-YQ018mjrZsnHDuT9ss4cK0RPDJyQjsRlcioM6-t4ds8TCczPmduN7B1DhKUPYPjr6-3SilB_O7Isl6w1o13BhoK-zGj0kQdYu2FCxYldpUffyq1FxaD1FbltdX_mf6Dy_Bew4S2Ow5cHCp8-K7l117sM9wjvGi0r8AhQFCllAlTB1eixiJik_b21MOpfVdko6gKNFYTyovA14YXxTZrlfjb7BAcvADljX7SJsOQjSvt7Nai74eRrxSHyh_FGKl9xA85-JpLby" />
+            <div class="absolute top-4 right-4 bg-secondary text-primary px-3 py-1 rounded text-xs font-bold"></div>
+          </div>
+          <div class="p-8">
+            <h4 class="text-2xl font-display mb-2">Red Velvet Passion</h4>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">The Vanille Cakes namesake color in a moist,
+              velvety cocoa cake.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-bold text-primary dark:text-secondary"></span>
+              <button
+                class="p-2 rounded-full border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors">
+                <span class="material-symbols-outlined">shopping_bag</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-primary text-white" id="secrets">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div class="max-w-xl">
+          <h3 class="text-3xl font-serif mb-2 text-secondary font-semibold">Baking Secrets</h3>
+          <p class="text-gray-300">Discover the techniques and stories behind the most loved creations at Vanille.</p>
+        </div>
+        <a class="mt-6 md:mt-0 flex items-center gap-2 text-4xl font-extrabold text-gold-gradient drop-shadow-lg hover:scale-105 transition-transform"
+          href="blog.html" style="letter-spacing:0.03em;">Read our blog <span
+            class="material-symbols-outlined text-4xl">arrow_right_alt</span></a>
+      </div>
+      <div id="home-blog-list" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+    </div>
+  </section>
+  <script>
+    // Home page blog preview cards
+    fetch(`${CONFIG.API_BASE_URL}/api/blogs`)
+      .then(res => res.ok ? res.json() : fetch('blogs.json').then(r => r.json()))
+      .catch(() => fetch('blogs.json').then(r => r.json()))
+      .then(blogs => {
+        const container = document.getElementById('home-blog-list');
+        if (!container) return;
+        if (!blogs.length) {
+          // Show dummy content if no blogs
+          const dummy = [
+            {
+              title: 'How to Bake the Perfect Cake',
+              date: '2026-02-16',
+              author: 'Chef Vanille',
+              image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDs8j8W010mLzYTWjkk3a3Pj35ZvdjqgNpR04J1Qa-2izf0IqQ-mMBiFkupTlQmokfXhDa6dsfW5Ln2QK2f7JsynZdYtiIT34oMuitppG7F9-CAqsbkvxn1-bzd_oI_8RfeuAYaOggD_XvTsx2dpep8Q0rAv9-qg-bU5Fp20CGYmIq55Q_pE8QEBBohDj1jjjhnFbd-rYj4rW0Eue7JbBgI-xlAeadoyTeAj9DPx7m_d0O8KVHbZjETizJ2IpoU4kqKT24GDDDeu_7_',
+              content: 'Discover the secrets to a moist, fluffy cake every time. Our chef shares tips and tricks for home bakers.'
+            },
+            {
+              title: 'Vanilla vs. Chocolate: The Ultimate Showdown',
+              date: '2026-02-10',
+              author: 'Chef Vanille',
+              image: '',
+              content: 'Which flavor reigns supreme? We break down the pros and cons of each classic cake flavor.'
+            }
+          ];
+          dummy.forEach((blog, idx) => {
+            const card = document.createElement('div');
+            card.className = 'relative group cursor-pointer overflow-hidden rounded-xl h-96 bg-white dark:bg-gray-900 shadow-xl flex flex-col';
+            card.innerHTML = `
+          ${blog.image ? `<img src="${blog.image}" alt="${blog.title}" class="w-full h-48 object-cover">` : ''}
+          <div class="p-6 flex-1 flex flex-col">
+            <span class="text-secondary text-xs font-bold uppercase tracking-widest mb-2">${blog.date} &bull; ${blog.author}</span>
+            <h4 class="text-2xl font-display mb-2 text-primary dark:text-secondary">${blog.title}</h4>
+            <p class="text-gray-500 dark:text-gray-300 text-sm line-clamp-2 flex-1">${blog.content}</p>
+            <span class="mt-4 inline-block text-secondary underline font-semibold opacity-60">Read More</span>
+          </div>
+        `;
+            container.appendChild(card);
+          });
+          return;
+        }
+        blogs.slice(-2).reverse().forEach((blog, idx) => {
+          const card = document.createElement('div');
+          card.className = 'relative group cursor-pointer overflow-hidden rounded-xl h-96 bg-white dark:bg-gray-900 shadow-xl flex flex-col';
+          card.innerHTML = `
+        ${blog.image ? `<img src="${blog.image}" alt="${blog.title}" class="w-full h-48 object-cover">` : ''}
+        <div class="p-6 flex-1 flex flex-col">
+          <span class="text-secondary text-xs font-bold uppercase tracking-widest mb-2">${blog.date} &bull; ${blog.author}</span>
+          <h4 class="text-2xl font-display mb-2 text-primary dark:text-secondary">${blog.title}</h4>
+          <p class="text-gray-500 dark:text-gray-300 text-sm line-clamp-2 flex-1">${blog.content.split('\n')[0]}...</p>
+          <a href="blog.html?post=${blogs.length - 2 + idx}" class="mt-4 inline-block text-secondary underline font-semibold">Read More</a>
+        </div>
+      `;
+          container.appendChild(card);
+        });
+      });
+  </script>
+
+  <section class="py-24 pattern-bg">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <img alt="Vanille Cakes Bakery Interior" class="rounded-2xl shadow-2xl"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsqFFvxZvHVQJcS1x4Gu7YITrP5EJVThE_UELjLinXkc15CPCk-iPpxC40Cr8atw_wHo3tMBwy_NqN5V6_snKGxFJihaKRs5xYWlLcCzMmIZtc1AzrIeiImH9XAAkpKxc-V5CPwPmBoO_lT8VFg7uN3jEiyA1C3kUJU3bp_9iH3G7Y1JHHh7fdPg_zHyN9YP2MebApVHVH_mGQ5NGT_x4c9NHKesIed1YHKQW1Y4g5fV78KkWb7jupA3eICkUJJZJInSlEtaz0LjoQ" />
+      </div>
+      <div>
+        <h3 class="text-4xl font-serif text-primary dark:text-white mb-6">Born in Kyanja, Baked for Kampala.</h3>
+        <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed italic">"Our mission at Vanille is to bring a
+          touch of Parisian elegance to the heart of Kampala. Every ingredient is chosen for its purity, and every cake
+          is baked with an obsession for perfection."</p>
+        <div class="flex items-center space-x-6">
+          <div class="flex -space-x-3">
+            <img alt="User" class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwwV8HWTJvdp0OYFR5mIe8EUTOReP5OFcJ5FUkVtNVTmkZI1GTdSq6qK-sdEHm1FqkkYbOWPylLWglhlXz9-UUEXkSHqBfYrzoi4zTTzuhiyoP5jx8h22ApHe19Scpt2Zykv_iF5dAqJD6yuhIC_ycG3XaHGgj4ZhB993xu2b9leK9HtQak-5x3FjhEOxk0FqrzRx_6BrLJZdKt5VbI4ifzZYz11Y7fE6qu481LX1f3NKBE45qjjN1AKfcNbxZZGkBT33QCHAzP59d" />
+            <img alt="User" class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxDP8MsYWTiFyWWlX768HhtSVBfNE29wSdoMCtrBHxP9RXIHiXo7zK0r4X3ZAWUg44wlAbq1NgfPXMo6dNMtIjcXiIdBLP9IM8eGjoMNm75yCBT4Q_hBymB6RujyCmzDQ_0iPgBp67cWoxe8a_5Xj70LUceu2EP6rcqi6E55Jse_1rgiVIKxxDK587ocyQY45T0YtcsK7o_50YCcyrObN-9cUJ4FbrPAhzLteApKFxEnZNciPOI0ab64Eu8DfBqj1xqTJiGzRBsRsN" />
+            <img alt="User" class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGUv9_ApLpOBgm2xDsrEVTsyTvCtMkwKJwdvtSbQ3XUipr7BhTMuUxGPeUX3xy7MVMPiE6qRhgwUb82c0m63B-miJXXfmQAubgx2A0jn3iX5KjCT47MPc2e8Osp9wcuffcF3za4f9CNXm_GIxP2NLrNVqJ9LAflSoajtafsw45QcPtWMTcIU4s8EGK8gi2FE_p6UoK-2e7Qql_ckcah6gjTsVXSQRtFonS5FZjfD11ZRg1tcGkP70GQalHUS2mNyK6TxTQITizLNTq" />
+          </div>
+          <p class="text-sm font-semibold">Join our Family of Happy Customers in Kampala</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-background-dark text-white pt-24 pb-12" id="contact">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div class="md:col-span-1">
+        <div class="flex items-center space-x-3 mb-6">
+          <img src="assets/flower-white.png" alt="Vanille Flower" class="h-12 w-auto object-contain">
+          <span class="text-5xl font-brand text-gold-gradient tracking-normal normal-case">Vanille</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-8">Premium bakery specialized in bespoke cakes and gourmet
+          treats in Kyanja, Kampala, Uganda.</p>
+        <div class="flex space-x-4">
+          <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors"
+            href="https://www.instagram.com/dinewithme25?igsh=MTB5cHo1Mmd3dHB0cQ==" target="_blank" rel="noopener"
+            aria-label="Instagram">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-secondary font-display text-xl mb-6">Quick Links</h4>
+        <ul class="space-y-4 text-sm text-gray-400">
+          <li><a class="hover:text-secondary transition-colors" href="#">Our Gallery</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="#">Read our Blog</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-secondary text-gray-600 transition-colors mt-2 block" href="admin.html">Admin Login</a></li>
+          //<li><a class="hover:text-secondary transition-colors" href="#">Delivery Policy</a></li>//
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-secondary font-display text-xl mb-6">Location</h4>
+        <ul class="space-y-4 text-sm text-gray-400 mb-4">
+          <li class="flex items-start space-x-3">
+            <span class="material-symbols-outlined text-secondary text-lg">location_on</span>
+            <span>Plot 452, Kyanja Ring Road<br />Nakawa Division, Kampala</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <span class="material-symbols-outlined text-secondary text-lg">phone</span>
+            <span>+256 772 560 277</span>
+          </li>
+        </ul>
+        <div class="rounded-xl overflow-hidden shadow-lg border border-secondary/30 relative group"
+          style="height:200px;">
+          <a href="https://www.google.com/maps/place/Plot+452,+Kyanja+Ring+Road,+Kampala,+Uganda" target="_blank"
+            rel="noopener" class="absolute inset-0 z-10" title="Open in Google Maps"></a>
+          <iframe src="https://www.google.com/maps?q=Plot+452,+Kyanja+Ring+Road,+Kampala,+Uganda&output=embed"
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Vanille Cakes Location Map"></iframe>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-6 pt-12 border-t border-white/5 text-center text-xs text-gray-500 uppercase tracking-[0.2em]">
+      © 2026 Vanille Cakes Kampala. All Rights Reserved.
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
+
+<script>
+  // Theme persistence logic
+  function setTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }
+  // On page load, set theme from localStorage
+  (function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else if (savedTheme === 'light') {
+      document.documentElement.classList.remove('dark');
+    }
+  })();
+  // Toggle button
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function () {
+        const isDark = document.documentElement.classList.contains('dark');
+        setTheme(isDark ? 'light' : 'dark');
+      });
+    }
+  });
+  // Existing orderNowPrompt function
+  function orderNowPrompt() {
+    const choice = confirm('Would you like to call or text on WhatsApp? Click OK to call, Cancel to text on WhatsApp.');
+    if (choice) {
+      window.location.href = 'tel:+256772560277';
+    } else {
+      window.open('https://wa.me/256772560277', '_blank');
+    }
+  }
+</script>
